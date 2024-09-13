@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Football Fan Site</title>
+</head>
+<body>
+    <h1>Live Match Scores</h1>
+    <ul>
+        <% scores.forEach(score => { %>
+            <li><%= score.match %>: <%= score.result %></li>
+        <% }); %>
+    </ul>
+
+    <h1>Team Rankings</h1>
+    <ul>
+        <% rankings.forEach(team => { %>
+            <li><%= team.name %>: <%= team.rank %></li>
+        <% }); %>
+    </ul>
+
+    <h1>Football News</h1>
+    <ul>
+        <% news.forEach(article => { %>
+            <li><%= article.title %></li>
+        <% }); %>
+    </ul>
+</body>
+</html>
